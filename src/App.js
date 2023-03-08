@@ -1,23 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import TheHeader from "./layout/TheHeader";
+import Card from "./views/Card";
+import TodoView from "./layout/TodoView";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <TheHeader />
+      <Card>
+        <TodoView />
+      </Card>
     </div>
   );
 }
